@@ -15,7 +15,7 @@ object BridgeServer {
 
     fun start(port: Int = 8765) {
         if (server != null) return
-        server = embeddedServer(Netty, port = port, host = "0.0.0.0") {
+        server = embeddedServer(Netty, port = port, host = "127.0.0.1") {
             install(ContentNegotiation) {
                 gson {
                     setPrettyPrinting()
