@@ -224,7 +224,7 @@ class MainActivity : Activity() {
 
     private fun updateConnectionInfo() {
         val ip = getLocalIpAddress()
-        tvAddress.text = "http://$ip:8765 (USB/LAN)"
+        tvAddress.text = "http://127.0.0.1:8765 (local only)"
     }
 
     private fun updateStatus() {
